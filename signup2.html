@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Tektur&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      @media (max-width: 992px) {
+        * {
+          display: flexbox;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          max-width: 100%;
+        }
+        .logo {
+          display: flex;
+          justify-self: center;
+          justify-self: center;
+        }
+        .sign {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .image {
+          display: flex;
+          justify-self: center;
+          align-self: center;
+        }
+        .verify {
+          display: flex;
+          justify-self: center;
+          align-self: center;
+          padding-left: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: black; height: 100vh">
+    <div
+      class="body"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-wrap: wrap;
+      "
+    >
+      <div style="display: flexbox">
+        <div
+          style="
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 1rem 9rem;
+          "
+        >
+          <img
+            src="../Assets/Heart3.png"
+            alt="bed-mate-logo"
+            style="height: 3.7rem"
+            class="logo"
+          />
+          <img
+            src="../Assets/cumrid3.png"
+            alt="bed-mate-logo"
+            style="height: 1.7rem"
+            class="logo"
+          />
+        </div>
+        <img src="Assets/Col.png" alt="" style="height: 36rem" class="image" />
+      </div>
+      <form action="">
+        <div style="padding: 0 6rem">
+          <center>
+            <h1
+              style="
+                color: white;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+              "
+            >
+              Sign Up
+            </h1>
+          </center>
+          <img
+            src="Assets/SignUpText.png"
+            alt=""
+            style="margin-bottom: 20px"
+            class="image"
+          />
+          <div>
+            <label
+              for=""
+              style="
+                display: flex;
+                align-items: center;
+                padding: 0.7rem 0;
+                text-transform: capitalize;
+                height: 40px;
+                width: 200px;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                color: white;
+              "
+              >Country</label
+            >
+          </div>
+          <select
+            name=""
+            id=""
+            style="
+              height: 3rem;
+              background-color: transparent;
+              width: 31.5rem;
+              border: 1px solid gray;
+              border-radius: 1rem;
+              font-family: Poppins, Arial, Helvetica, sans-serif;
+              color: white;
+              padding-left: 1rem;
+            "
+          >
+            <option value="" style="padding-left: 6rem;background-color: black;">Nigeria</option>
+          </select>
+          <div>
+            <label
+              for=""
+              style="
+                display: flex;
+                align-items: center;
+                padding: 0.7rem 0;
+                text-transform: capitalize;
+                height: 40px;
+                width: 200px;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                color: white;
+              "
+              >State</label
+            >
+          </div>
+          <select
+            name=""
+            id=""
+            style="
+              height: 3rem;
+              background-color: transparent;
+              width: 31.5rem;
+              border: 1px solid gray;
+              border-radius: 1rem;
+              font-family: Poppins, Arial, Helvetica, sans-serif;
+              color: white;
+              padding-left: 1rem;
+            "
+          ></select>
+          <div>
+            <label
+              for=""
+              style="
+                display: flex;
+                align-items: center;
+                padding: 0.7rem 0;
+                text-transform: capitalize;
+                height: 40px;
+                width: 200px;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                color: white;
+              "
+              >Zip Code</label
+            >
+          </div>
+          <input
+            type="tel"
+            inputmode="numeric"
+            maxlength="6"
+            class="form-control"
+            aria-label="Name"
+            style="
+              height: 2.7rem;
+              background-color: transparent;
+              width: 30rem;
+              border: 1px solid gray;
+              border-radius: 1rem;
+              font-family: Poppins, Arial, Helvetica, sans-serif;
+              color: white;
+              padding-left: 1rem;
+            "
+          />
+          <div class="verify">
+            <button
+              class="sign"
+              style="
+                background-color: #e21f4e;
+                margin-top: 1rem;
+                cursor: pointer;
+                height: 3rem;
+                width: 31rem;
+                border: 1px solid black;
+                border-radius: 3rem;
+                color: white;
+                font-weight: bolder;
+                font-size: large;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+              "
+            ><a href="profile.html" style="color: white;text-decoration: none;">Sign In</a>
+            </button>
+          </div>
+          <center>
+            <p
+              style="
+                color: white;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+              "
+            >
+              Already have an Account?
+              <a
+                href="signIn.html"
+                style="
+                  text-decoration: none;
+                  color: #e21f4e;
+                  font-family: Poppins, Arial, Helvetica, sans-serif;
+                "
+                >Sign in</a
+              >
+            </p>
+          </center>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
