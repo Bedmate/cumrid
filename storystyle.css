@@ -1,0 +1,444 @@
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+.scaleHover a:hover, .scaleHover article:hover{
+    transform: scale(110%);
+    transition: all 0.5s;
+}
+.floatingBtn:hover{
+    transform: scale(120%);
+    transition: all 0.5s; 
+}
+
+nav{
+    width: 20%;
+    min-width: 100px;
+    max-width: 200px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    padding: .4rem;
+
+    position: sticky;
+}
+.logo{
+    width: 85%;
+    max-width: 140px;
+    margin:.6rem;
+    margin-top: 1rem;
+}
+
+nav > ul {
+    width: 80%;
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 0;
+    margin-top: 2rem;
+
+}
+
+nav > ul > li {
+    list-style-type: none;
+    color: white;
+    width: 100%;
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+    margin: 0.5rem ;
+    font-size: .9rem ;
+    transition: all .5s;
+}
+
+
+nav li > a > img{
+    width: 25px;
+    height: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+
+.logout{
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 2rem auto 0 auto ; 
+    /* border: 1px solid red; */
+}
+
+
+main{
+    width: 65%;
+    flex-shrink: 1;
+    height: 100%;
+
+    /* border: 1px solid red; */
+    /* height: 100%; */
+    margin-top: 15px;
+    position: relative;
+
+
+
+    /*  */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+main > span{
+    margin: 13px 0 0 8px;
+    color: white;
+}
+
+/* stories update */
+
+.stories__update{
+    padding: 0 5px;
+    /* border: 1px solid red;  */
+    height:80px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+
+}
+.stories__update button{
+    position: absolute;
+    right: -3px;
+    box-sizing: border-box;
+    top: 25%;
+    border: 0;
+    /* padding: 8px; */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+/* .stories__update button:hover{
+    transform: scale(115%);
+} */
+
+
+
+.stories__update article{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+    transition: outline-color .6s;
+    
+}
+
+
+.stories__update article img{
+    width: 50px;
+    transition: all .6s;
+}
+
+.stories__update span{
+    font-size: .78rem;
+    margin: 5px 0;
+}
+
+
+/* story_heads */
+
+.stories__update > :not(:first-child){
+    margin: 5px 15px;
+}
+
+.stories__update > :not(:first-child) img{
+    border-radius: 50%;
+    /* border: 2px solid crimson; */
+}
+
+
+/* suggested_kinks */
+.suggested_kinks{
+    height: 79%;
+    width: 99%;
+    /* border: 1px solid green; */
+
+}
+
+.suggested_kinks_img_tab{
+    width: 98%;
+    margin: 4px auto;
+    height: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.suggested_kinks_img_tab span{
+        width: 33%;
+        margin: auto 2px;
+        height: 3px;
+        border-radius: .5rem;
+        /* background-color: gray; */
+        background-color: whitesmoke;
+    }
+
+
+.current_img{
+    background-color: gray !important;
+}
+
+
+/* kinks_img_details */
+.kinks_img_details{
+    position: relative;
+    height: 100%;
+
+}
+
+.kinks_img_details > button{
+    position: absolute;
+    top: 45%;
+    height: 29px;
+    width: 29px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    border: 0;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+
+
+.right{
+    right: 0;
+}
+.left{
+    left: 0;
+}
+.kinks_img{
+    width: 100%;
+    height: 96%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.kink_details{
+    position: absolute;
+    bottom: 18px;
+    /* z-index: 10; */
+    margin: 0px 20px ;
+    color: white;
+    width: 35%;
+    text-align: left;
+}
+
+.kinks_name{
+    display: flex;
+    align-items: center;
+    font-weight: 900;  
+    font-size: 1.2rem; 
+}
+
+.kink_tick{
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+
+
+aside{
+    width: 25%;
+    min-width: 240px ;
+    /* flex-grow: 0; */
+   
+    /* border: 1px solid aqua; */
+
+}
+
+
+/* Profile */
+
+.profile{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile > div {
+    max-width: 270px;
+    /* border: 1px solid red; */
+    width: 95%;
+    background-color: rgba(38, 37, 37, 0.316);
+    color: whitesmoke;
+}
+
+
+/* profile_name_img */
+
+
+.profile_name_img{
+    display: flex;
+    padding: 10px 7px;
+    height: 40px;
+    justify-content: space-between;
+    /* font-size: small; */
+    border-radius: 5px;
+    margin: 10px  0 0 0;
+    /* border: 1px solid red; */
+    
+
+}
+.name_preference{
+    display: flex;
+    flex-direction: column;
+}
+.profile_name{
+    font-size: 1rem;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+
+}
+.profile_name img{
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+}
+
+.profile_preference{
+    font-size: .6rem;
+    margin: auto;
+
+}
+
+.profile_img{
+    width: 40px;
+    height: 40px;
+}
+
+/* profile_name_img */
+
+/* connections */
+.connections{
+    padding:  7px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.connections h6{
+    margin: 10px 0;
+    font-size: .8rem;
+    font-weight: 100;
+}
+.new_conncect{
+    display: flex;
+    font-size: .82rem;
+}
+.new_conncect img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+
+
+/* chat */
+.chat{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.head{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: .9rem;
+    align-items: center;
+}
+.chat_search_settings a{
+    margin: 0 7px;
+    text-decoration: none;
+}
+.chat_search_settings a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* chat_list */
+.chat_list{
+    width: 80%;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    margin-top: .4rem;
+    min-height: 290px;
+    /* max-width: 300px; */
+
+}
+.active_chat {
+    display: flex;
+    align-items: center;
+    font-size: .66rem;
+    margin: 4px;
+    text-decoration: none;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+
+.chat_img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+.Package{
+    padding: 10px;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+
+}
+.Package span{
+    margin: 30px 0 ;
+    font-size: .9rem;
+}
+
+
+.package_details img{
+    margin: 0 5px 0 0;
+}
+
+.package_details{
+    display: flex;
+    font-size: .7rem;
+    align-items: center;
+    margin: 10px 0 0 0;
+    color: white;
+    text-decoration: none;
+
+}

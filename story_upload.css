@@ -1,0 +1,140 @@
+
+nav{
+    min-width: 13%;
+    max-width: 25%;
+}
+
+.section{
+    min-width:45% ;
+    display: flex;
+    flex-shrink: 0;
+    max-width: 85%;
+    position: relative;
+    /* background-color: aqua; */
+    /* border: 1px solid red; */
+}
+.section main{
+    width: 75%;
+}
+
+
+.camera__input{
+    width: 80%;
+    height: 75%;
+
+    margin: 0 auto;
+    /* justify-self: flex-end;
+    align-self:end; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.camera_filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera_filter button{
+    background-color: transparent; 
+    border: 0;
+    /* border: 1px solid white; */
+    margin: 20px;
+}
+.camera_filter button img{
+    width: 50px;
+    height: 50px;
+    
+}
+.camera_filter button, .camera_filter span{
+    cursor: pointer;
+}
+
+.camera-img{
+    /* border: 1px solid white; */
+    height: 90px;
+    width: 90px;
+    
+
+}
+
+.camera__input input{
+    padding: 10px 10px 10px 25px ;
+    width: 80%;
+    margin: 20px 0 0 0;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgba(169, 169, 169, 0.2);
+    color: white;
+}
+.camera__input input::placeholder{
+    
+    font-size: small;
+    color: whitesmoke;
+}
+.camera__input input:focus-within{
+    outline: 0;
+    border: 0;
+}
+
+
+ /* <!-- story upload popOver --> */
+ .modal-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .popver{
+    background-color: rgba(128, 128, 128, 0.187);
+    padding: 10px;
+    height: 270px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: .8rem;
+ }
+
+ .popver p{
+    width: 100%;
+    text-align: center;
+ }
+ .confirm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+ }
+ .confirm button{
+    width: 70%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+
+    
+ }
+
+ .Continue{
+    background-color: #E21F4E;
+    border: 0;
+
+ }
+ .Discard{
+    border: 1px solid #E21F4E;
+    background-color: transparent;
+ }
