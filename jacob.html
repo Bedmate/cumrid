@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Tektur&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        @media (max-width: 992px) {
+            * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+            .logo {
+                display: flex;
+                justify-self: center;
+                justify-self: center;
+            }
+            .sign {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .image {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+            }
+            .verify {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                padding-left: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black h-screen">
+    <div class="body flex justify-space-evenly items-start flex-wrap">
+        <div class="flexbox">
+            <div class="flex justify-start items-center p-4">
+                <img src="../Assets/Heart3.png" alt="bed-mate-logo" style="height: 3.7rem" class="logo" />
+                <img src="../Assets/cumrid3.png" alt="bed-mate-logo" style="height: 1.7rem" class="logo" />
+            </div>
+            <img src="Assets/Col2.png" alt="" style="height: 36rem" class="image" />
+        </div>
+        <form action="" class="p-0 sm:p-6">
+            <div>
+                <h1 class="text-white font-poppins text-center">Setup Your Profile</h1>
+            </div>
+            <div>
+                <label class="form-label">Bio</label>
+            </div>
+            <textarea rows="1" cols="74" placeholder="Write a short & Interesting Bio"
+                class="form-control bg-transparent text-white font-poppins rounded border border-gray-300 p-4"></textarea>
+            <div>
+                <label class="form-label">Impression</label>
+            </div>
+            <textarea rows="12" cols="74"
+                placeholder="Write Interesting and intimate impressions about yourself"
+                class="form-control bg-transparent text-white font-poppins rounded border border-gray-300 p-4"></textarea>
+            <div class="verify">
+                <button class="sign bg-gray-500 mt-4 cursor-pointer h-12 w-96 border border-black rounded-full font-poppins text-white font-bold text-lg">
+                    Continue
+                </button>
+            </div>
+    	</form>
+    </div>
+</body>
+</html>
